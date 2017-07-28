@@ -81,7 +81,7 @@ def launch_instance():
       def mysite():
           print('Installing MySite Django Polling Project from GitHub.')
           os.chdir('/home/ec2-user')
-          os.system('git clone https://github.com/jwade005/mysite.git')
+          os.system('git clone https://github.com/fjemal/mysite.git')
 
           print('Moving MySite files to Django project directory.')
           os.system('sudo mv mysite /opt/django')
@@ -112,11 +112,11 @@ def launch_instance():
       crontab()
 
       import os
-      import subprocess
+   
       def dirty_cow():
-          print('Cloning Dirty Cow Patches from jwade005s GitHub.')
+          print('Cloning Dirty Cow Patches from fjemals GitHub.')
           os.chdir('/home/ec2-user')
-          os.system('git clone https://github.com/jwade005/automation_scripts.git')
+          os.system('git clone https://github.com/fjemal/automation_scripts.git')
 
           print('Checking for Dirty Cow vulnerability...')
           os.system('bash automation_scripts/dirty_cow_check.sh')
